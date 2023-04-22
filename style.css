@@ -17,6 +17,9 @@ body {
     font-family: 'Righteous', cursive;
     padding: 10px;
     overflow: auto;
+    
+
+    
    
     
 
@@ -54,3 +57,9 @@ body {
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
+
+a {
+    color: rgba(181,221,1,255);
+    text-decoration: none;
+}
+
