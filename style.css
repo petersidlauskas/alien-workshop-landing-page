@@ -1,0 +1,56 @@
+body {
+    background-color: rgba(253,82,25,255);
+}
+
+#container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#text {
+    color: rgba(181,221,1,255);
+    font-size: 50px;
+    font-family: 'Righteous', cursive;
+    padding: 10px;
+    overflow: auto;
+   
+    
+
+}
+
+
+#text::after {
+    content: ' ';
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    animation: blinker 0.5s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+#address {
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    
+    
+}
+
+#image {
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
